@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
-# Name:        module1
-# Purpose:
+# Name:        CountdownWithWhile.py
+# Purpose:     Assignment Day 6 #3
 #
 # Author:      MCE
 #

@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
-# Name:        CountownWithFor.py
-# Purpose:     Assignment Day 6 #2
+# Name:        Dump24hrClock.py
+# Purpose:     Assignment Day 6 #5
 #
 # Author:      Patrick Drapeau
 #
@@ -9,8 +9,9 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
+for hh in range(00,24,1):
+    for mm in range(00,60,15):
+        print "{:02}:{:02}".format (hh,mm)
 
-for countdown in range(10,-1,-1):
-    print countdown
 
 

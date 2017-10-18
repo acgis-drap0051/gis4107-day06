@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
-# Name:        CountownWithFor.py
-# Purpose:     Assignment Day 6 #2
+# Name:        Dump12hrClock.py
+# Purpose:     Assignment Day 6 #6
 #
 # Author:      Patrick Drapeau
 #
@@ -9,8 +9,17 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
+for ampm in ["AM", "PM"]:
+    for hh in range(00,12,1):
+        if hh == 0:
+            hh = 12
 
-for countdown in range(10,-1,-1):
-    print countdown
+        for mm in range(00,60,15):
+            print "{:02}:{:02}{}".format (hh,mm,ampm)
+
+
+
+
+
 
 

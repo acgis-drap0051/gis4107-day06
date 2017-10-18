@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
-# Name:        CountownWithFor.py
-# Purpose:     Assignment Day 6 #2
+# Name:        Zero_to_1k.py
+# Purpose:     Assignment Day 6 #4
 #
 # Author:      Patrick Drapeau
 #
@@ -9,8 +9,10 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
+x = 0
+while x <= 1000:
+    print x,
+    x += 100
 
-for countdown in range(10,-1,-1):
-    print countdown
 
 

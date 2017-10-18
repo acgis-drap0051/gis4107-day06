@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
-# Name:        CountownWithFor.py
-# Purpose:     Assignment Day 6 #2
+# Name:        BreakContinueExamples.py
+# Purpose:     Day 6 #1
 #
 # Author:      Patrick Drapeau
 #
@@ -10,7 +10,18 @@
 #-------------------------------------------------------------------------------
 
 
-for countdown in range(10,-1,-1):
-    print countdown
+x = 0
+while x <= 4:
+    x += 1
+    if x == 2: continue
+else:
+    print "loop done"
 
 
+
+for i in [1,2,3,4]:
+    if i == 2: continue
+    if i == 3: break
+    print 1
+else:
+    print "loop done"
