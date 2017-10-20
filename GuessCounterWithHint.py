@@ -1,6 +1,6 @@
 #-------------------------------------------------------------------------------
-# Name:        GuessCounter.py
-# Purpose:     Assignment Day 6 #9
+# Name:        GuessCounterWithHint.py
+# Purpose:     Assignment Day 6 #10
 #
 # Author:      Patrick Drapeau
 #
@@ -25,9 +25,16 @@ def main():
 
      if number_to_guess > max_bound or number_to_guess < min_bound:
         return 0
+     firstGuess = random.randint(min_bound, max_bound)
 
      while random.randint(min_bound, max_bound) != number_to_guess:
         count += 1
+        firstGuess = random.randint(min_bound, max_bound)
+
+        if firstGuess > number_to_guess:
+            max_bound = firstGuess
+        else:
+            min_bound = firstGuess
         if count <= maximum: continue
         if count > maximum: break
 
